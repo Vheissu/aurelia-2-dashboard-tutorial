@@ -1,3 +1,38 @@
-.message {
-  background-color: lightblue;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+body {
+  background: #1E1E1E;
+  color: #FFF;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  align-items: start;
+  display: grid;
+  gap: 20px;
+  height: 100vh;
+  grid-template-columns: repeat(12, 1fr);
+  margin: 0 auto;
+  padding: 50px;
+}
+
+h4 {
+  font-size: 40px;
+  font-weight: 300;
+  margin: 0 0 10px 0;
+}
+
+date-component {
+  grid-column: span 3;
+}
+
+dog-component {
+  color: #FFF;
+  grid-column: span 4;
+}
+
+img {
+  height: 500px;
+  object-fit: cover;
+  width: 100%;
 }

@@ -6,6 +6,7 @@ export class DogComponent {
     }
     
     fetchDog() {
-        return this.http.fetch('https://random.dog/woof.json');
+        return this.http.fetch('https://random.dog/woof.json')
+        .then(r => r.ok ? r.json() : (() => { throw new Error('Unable to fetch doggo :(') }))
     }
 }

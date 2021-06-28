@@ -1,3 +1,8 @@
-<require from="./components/date-component"></require>
+<import from="./components/date-component"></import>
+<import from="./components/dog-component"></import>
 
-<date-component></date-component>
+<div class="container">
+    <template repeat.for="component of components">
+        <au-compose view-model.bind="component"></au-compose>
+    </template>
+</div>

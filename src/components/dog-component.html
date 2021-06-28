@@ -1,4 +1,6 @@
-<template promise.bind="fetchDog()">
+<div class="component dog-component" promise.bind="fetchDog()">
     <span pending>Fetching doggo...</span>
-    <template then.from-view="data"></template>
-</template>
+    <div then.from-view="dog">
+        <img src.bind="dog.url" loading="lazy">
+    </div>
+</div>
