@@ -1,12 +1,7 @@
-import { IHttpClient } from '@aurelia/fetch-client';
+import { Api } from '../services/api';
 
 export class ExchangeComponent {
-    constructor(@IHttpClient private http: IHttpClient) {
+    constructor(private api: Api) {
     
-    }
-    
-    getExchangeData() {
-        return this.http.fetch('https://api.exchangerate-api.com/v4/latest/USD')
-        .then(r => r.ok ? r.json() : (() => { throw new Error('Unable to fetch exchange rates') }))
     }
 }

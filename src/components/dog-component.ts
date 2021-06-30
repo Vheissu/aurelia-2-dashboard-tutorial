@@ -1,12 +1,7 @@
-import { IHttpClient } from '@aurelia/fetch-client';
+import { Api } from '../services/api';
 
 export class DogComponent {
-    constructor(@IHttpClient private http: IHttpClient) {
+    constructor(private api: Api) {
     
-    }
-    
-    fetchDog() {
-        return this.http.fetch('https://random.dog/woof.json')
-        .then(r => r.ok ? r.json() : (() => { throw new Error('Unable to fetch doggo :(') }))
     }
 }

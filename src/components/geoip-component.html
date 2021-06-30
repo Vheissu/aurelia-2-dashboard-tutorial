@@ -1,4 +1,4 @@
-<div class="component geoip-component" promise.bind="getUserInfo()">
+<div class="component geoip-component" promise.bind="api.fetchData('https://freegeoip.app/json/')">
     <template pending><p>Getting details...</p></template>
 
     <ul then.from-view="details">

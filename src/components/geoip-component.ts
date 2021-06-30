@@ -1,12 +1,7 @@
-import { IHttpClient } from '@aurelia/fetch-client';
+import { Api } from '../services/api';
 
 export class GeoipComponent {
-    constructor(@IHttpClient private http: IHttpClient) {
+    constructor(private api: Api) {
     
-    }
-    
-    getUserInfo() {
-        return this.http.fetch('https://freegeoip.app/json/')
-        .then(r => r.ok ? r.json() : (() => { throw new Error('Unable to contact API') }))
     }
 }

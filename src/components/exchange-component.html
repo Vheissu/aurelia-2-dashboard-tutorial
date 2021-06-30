@@ -1,4 +1,4 @@
-<div class="component exchange-component" promise.bind="getExchangeData()">
+<div class="component exchange-component" promise.bind="api.fetchData('https://api.exchangerate-api.com/v4/latest/USD')">
     <template pending><p>Fetching data...</p></template>
     <template then.from-view="data">
         <h3>$1 USD equals:</h3>
