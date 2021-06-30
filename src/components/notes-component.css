@@ -1,0 +1,24 @@
+.delete-btn {
+    background: none;
+    border: none;
+    color: #FF0000;
+    cursor: pointer;
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+  }
+
+.notes {
+    margin-top: 30px;
+}
+
+.notes li {
+    border-top: 1px solid rgba(255, 255, 255, 0.28);
+    margin-bottom: 10px;
+    padding-top: 10px;
+}
+
+.note-area {
+    height: 200px;
+    width: 430px;
+}

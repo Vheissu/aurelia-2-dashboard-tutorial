@@ -1,8 +1,5 @@
-<import from="./components/date-component"></import>
-<import from="./components/dog-component"></import>
-
 <div class="container">
     <template repeat.for="component of components">
-        <au-compose view-model.bind="component"></au-compose>
+        <au-compose containerless view-model.bind="component"></au-compose>
     </template>
 </div>
